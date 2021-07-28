@@ -279,7 +279,7 @@ const handleStorage = () => {
       item.remove();
     });
 
-    //then append search history buttons on nav
+    //then append search buttons on nav
     const historyArray = JSON.parse(localStorage.getItem('search-history'));
     historyArray.forEach(function (item) {
       const h1El = document.createElement('h1');
