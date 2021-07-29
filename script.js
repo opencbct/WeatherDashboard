@@ -2,9 +2,6 @@
 //one card for each day of the forecast
 //each card displays the same info categories from the current day excepting the uv index
 //to make each card use the fetch data from the search - it responds with a 7-day forecast in an array. loop through that array for each of the 5 days needed, and add data to the card.
-//if there is not a local storage item of the same name -
-//store the successfully searched city as a local storage item.
-//display buttons of the previously searched cities below the search bar
 //when the user clicks the button, grab the text content of the button and perform the search and fetch again for that item.
 
 const mainEl = document.getElementById('main');
