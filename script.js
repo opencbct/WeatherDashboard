@@ -3,6 +3,7 @@
 //if it's an invalid city, return an error (the api fetch will be unsuccessful)
 //if not an error -
 //display the city, date of forecast, and an icon for the main weather status
+
 //in smaller text, display the current day's temp, wind, humidity, and uv index (with colored background representing favorable, moderate, severe uv)
 //below the current day's display, place a display of a 5-day forecast
 //one card for each day of the forecast
@@ -20,6 +21,7 @@ let userCity = '';
 const searchBtn = document.getElementById('search-btn');
 
 //initial weather fetch with city name
+
 const fetchWeather = (apiUrl) => {
   fetch(apiUrl)
     .then((response) => {
@@ -247,6 +249,7 @@ const fetchWeather = (apiUrl) => {
     });
 };
 
+
 function handleClick() {
   const inputEl = document.getElementById('city-search');
   userCity = inputEl.value;
@@ -296,6 +299,10 @@ const handleStorage = () => {
         userCity = event.target.textContent;
         const weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${userCity}&units=imperial&appid=${apiKey}`;
         fetchWeather(weatherApi);
+               
+
+
+
       });
     });
   }
