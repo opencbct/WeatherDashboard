@@ -10,7 +10,7 @@ const apiKey = '82689e438f6babdf340f137676aecf51';
 let userCity = '';
 const searchBtn = document.getElementById('search-btn');
 
-//initial weather fetch with city name
+//weather fetch with city name
 
 const fetchWeather = (apiUrl) => {
   fetch(apiUrl)
@@ -46,8 +46,7 @@ const fetchWeather = (apiUrl) => {
         });
       }
 
-      //update storage
-      //pull storage array, check for match, if not push cityName, re-save storage array via stringify
+      //check for match, if not push cityName, re-save storage array via stringify
       const updateStorage = () => {
         const storageArray = JSON.parse(localStorage.getItem('search-history'));
 
